@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Tickets</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .tickets-section {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .header {
+            background-color: #fff;
+            display: flex;
+            width: 100%;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 9px 71px;
+            border: 2px solid #000;
+            align-items: center;
+        }
+        .logo {
+            aspect-ratio: 1.39;
+            object-fit: contain;
+            object-position: center;
+            max-width: 100%;
+            height: auto;
+        }
+        .icon {
+            aspect-ratio: 1.06;
+            object-fit: contain;
+            object-position: center;
+            width: 71px;
+            margin-left: auto;
+        }
+        .nav-bar {
+            background-color: #d9d9d9;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 9px 80px;
+            font: 400 32px Koulen, sans-serif;
+            border: 1px solid #000;
+        }
+        .nav-bar a {
+            color: #0e000f;
+            text-decoration: none;
+        }
+        .tickets-container {
+            background-color: #7b254f;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            padding: 9px 21px 29px;
+            border: 2px solid #000;
+        }
+        .tickets-title {
+            color: #e1dede;
+            text-align: center;
+            font: 400 64px Koulen, sans-serif;
+            margin-bottom: 50px;
+        }
+        .tickets-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .ticket-card {
+            background-color: #d9d9d9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #000;
+            text-align: center;
+            padding: 20px;
+            font: 400 24px Koulen, sans-serif;
+            flex: 1 1 300px;
+            max-width: 400px;
+        }
+        .ticket-card h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .ticket-price {
+            font-size: 48px;
+            margin: 20px 0;
+        }
+        .ticket-description {
+            font-size: 18px;
+        }
+        @media (max-width: 991px) {
+            .header, .nav-bar {
+                padding: 10px 20px;
+            }
+            .tickets-title {
+                font-size: 40px;
+            }
+            .ticket-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="tickets-section">
+        <header class="header">
+            <a href="index.html"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c720ada45fd9f3cdae5aec8617559648198f1bbf6b8c1e78e3fcbaf0bee43c3?placeholderIfAbsent=true&amp;apiKey=1ff31721a6fe49f39cde799654909093" alt="Event logo" class="logo"></a> <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/b9b316a436fb16324afa518dc7727cde6eb50502a787ff2bde8a7cce0ae2a73b?placeholderIfAbsent=true&apiKey=1ff31721a6fe49f39cde799654909093" alt="Event icon" class="icon">
+        </header>
+        <nav class="nav-bar">
+        <a href="2events.html">Event Programming</a> <a href="3tickets.html">Tickets</a> <a href="4contact.html">Contact Us</a></nav>
+        <main class="tickets-container">
+            <h1 class="tickets-title">Tickets</h1>
+            <div class="tickets-grid">
+                <article class="ticket-card">
+                    <h2>1 day regular</h2>
+                    <p class="ticket-price">100$</p>
+                    <p class="ticket-description">
+                        Includes:<br>
+                        Entry to festival for 1 day of choice & free tote bag
+                    </p>
+                </article>
+                <article class="ticket-card">
+                    <h2>1 day VIP</h2>
+                    <p class="ticket-price">250$</p>
+                    <p class="ticket-description">
+                        Includes:<br>
+                        Early entry to festival for 1 day of choice, free tote bag & reserved seating in tent
+                    </p>
+                </article>
+                <article class="ticket-card">
+                    <h2>3 day regular</h2>
+                    <p class="ticket-price">270$</p>
+                    <p class="ticket-description">
+                        Includes:<br>
+                        Entry to festival for 3 days, free tote bag & free water bottle
+                    </p>
+                </article>
+                <article class="ticket-card">
+                    <h2>3 day VIP</h2>
+                    <p class="ticket-price">300$</p>
+                    <p class="ticket-description">
+                        Includes:<br>
+                        Early entry to festival for 3 days, free tote bag, free water bottle, reserved seating in tent & Meet & greet with band of choice
+                    </p>
+                </article>
+            </div>
+        </main>
+    </section>
+</body>
+</html>

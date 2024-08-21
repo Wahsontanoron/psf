@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Section</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Koulen', sans-serif;
+            line-height: 1.6;
+        }
+        .contact-section {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            width: 100%;
+        }
+        .header {
+            background-color: #fff;
+            display: flex;
+            width: 100%;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 9px 71px;
+            border: 2px solid #000;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+        .secondary-logo {
+            width: 71px;
+            height: auto;
+        }
+        .navigation {
+            background-color: #d9d9d9;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: space-between;
+            padding: 9px 80px;
+            font-size: 32px;
+            border: 1px solid #000;
+        }
+        .navigation a {
+            color: #0e000f;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .navigation a:hover,
+        .navigation a:focus {
+            color: #7b254f;
+            text-decoration: underline;
+        }
+        .contact-content {
+            background-color: #7b254f;
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 80px;
+            border: 2px solid #000;
+        }
+        .contact-wrapper {
+            display: flex;
+            width: 100%;
+            max-width: 1200px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-title {
+            color: #e1dede;
+            text-align: center;
+            font-size: 64px;
+            margin-bottom: 40px;
+        }
+        .contact-website {
+            color: #e1dede;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 40px;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .contact-website:hover,
+        .contact-website:focus {
+            color: #fff;
+            text-decoration: underline;
+        }
+        .directions-title {
+            color: #e1dede;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+        .directions-content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .directions-wrapper {
+            display: flex;
+            gap: 40px;
+            width: 100%;
+            max-width: 1000px;
+        }
+        .map-column,
+        .address-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .map-container {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .address-text {
+            color: #e1dede;
+            text-align: center;
+            font-size: 32px;
+        }
+        @media (max-width: 991px) {
+            .header,
+            .navigation,
+            .contact-content {
+                padding: 20px;
+            }
+            .contact-title {
+                font-size: 48px;
+            }
+            .contact-website,
+            .directions-title {
+                font-size: 32px;
+            }
+            .directions-wrapper {
+                flex-direction: column;
+            }
+            .map-column,
+            .address-column {
+                width: 100%;
+            }
+            .address-text {
+                font-size: 24px;
+                margin-top: 20px;
+            }
+        }
+        @media (max-width: 767px) {
+            .navigation {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .contact-title {
+                font-size: 36px;
+            }
+            .contact-website,
+            .directions-title {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="contact-section">
+        <header class="header">
+            <a href="1index.html"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c720ada45fd9f3cdae5aec8617559648198f1bbf6b8c1e78e3fcbaf0bee43c3?placeholderIfAbsent=true&amp;apiKey=1ff31721a6fe49f39cde799654909093" class="logo" alt="Main logo"></a> <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/6117c75afb56962de5ab8beca05386a3a74e2c08b9e038df90a0cb965d946365?placeholderIfAbsent=true&apiKey=1ff31721a6fe49f39cde799654909093" class="secondary-logo" alt="Secondary logo" />
+        </header>
+        <nav class="navigation">
+        <a href="2events.html">Event Programming</a> <a href="2events.html">Tickets</a> <a href="4contact.html">Contact Us</a></nav>
+        <main class="contact-content">
+            <div class="contact-wrapper">
+                <h1 class="contact-title">Contact Us</h1>
+                <a href="https://www.parcjeandrapeau.com/" class="contact-website" target="_blank" rel="noopener noreferrer">https://www.parcjeandrapeau.com/</a>
+                <h2 class="directions-title">Directions:</h2>
+                <div class="directions-content">
+                    <div class="directions-wrapper">
+                        <div class="map-column">
+                            <div class="map-container">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.2635658356426!2d-73.53290668444385!3d45.51442337910149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91b0d7a3d5539%3A0x321450d9a16f6ead!2sParc%20Jean-Drapeau!5e0!3m2!1sen!2sca!4v1623345678901!5m2!1sen!2sca"
+                                    width="100%"
+                                    height="100%"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    title="Map of Parc Jean-Drapeau location"
+                                ></iframe>
+                            </div>
+                        </div>
+                        <div class="address-column">
+                            <p class="address-text">
+                                Parc Jean-Drapeau<br>
+                                1 Circuit Gilles Villeneuve,<br>
+                                Montreal, QC H3C 1A9
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
