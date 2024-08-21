@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precious Hearts Festival</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        .festival-container {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            border: 1px solid #000;
+        }
+
+        .header {
+            background-color: #fff;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 2px solid #000;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .icon {
+            width: 50px;
+            height: auto;
+        }
+
+        .navigation {
+            background-color: #d9d9d9;
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            border-bottom: 1px solid #000;
+        }
+
+        .navigation a {
+            color: #0e000f;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .main-content {
+            background-color: #7b254f;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 1rem;
+            border: 2px solid #000;
+        }
+
+        .content-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .background-image {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            margin-bottom: 2rem;
+        }
+
+        .festival-description {
+            color: #fff;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            text-shadow: 2px 2px 0 #000;
+        }
+
+        .sponsors-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .sponsors-title {
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-align: center;
+            border: 5px solid #000;
+            padding: 0.5rem 1rem;
+        }
+
+        .sponsors-logos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .sponsor-logo {
+            max-width: 150px;
+            height: auto;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navigation {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navigation a {
+                margin-bottom: 0.5rem;
+            }
+
+            .festival-description {
+                font-size: 1.5rem;
+            }
+
+            .sponsors-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="festival-container">
+        <header class="header">
+          <a href="index.html"><img src="https://cdn.builder.io/api/v1/image/assets/TEMP/0c720ada45fd9f3cdae5aec8617559648198f1bbf6b8c1e78e3fcbaf0bee43c3?placeholderIfAbsent=true&amp;apiKey=1ff31721a6fe49f39cde799654909093" alt="Festival Logo" class="logo"></a> <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ea217232f41282af8beeabbb890a709eb236964ba2e7b38c5efa5ffcdde45ea2?placeholderIfAbsent=true&apiKey=1ff31721a6fe49f39cde799654909093" alt="Festival Icon" class="icon">
+        </header>
+        <nav class="navigation">
+        <a href="2events.html">Event Programming</a> <a href="3tickets.html">Tickets</a> <a href="4contact.html">Contact Us</a></nav>
+        <main class="main-content">
+            <div class="content-wrapper">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/ab84b8ae8c580c076cf99b86e2163542a5131da1a4324f77750b770e86e6c645?placeholderIfAbsent=true&apiKey=1ff31721a6fe49f39cde799654909093" alt="Festival Background" class="background-image">
+                <h1 class="festival-description">
+                    Music to your ears<br>
+                    Embrace cultural diversity! Come to Precious Hearts Festival.<br>
+                    Where you'll find international artists to watch, delicious local food to eat, and a growing community that deserves your support.
+                </h1>
+                <section class="sponsors-section">
+                    <h2 class="sponsors-title">Sponsors</h2>
+                    <div class="sponsors-logos">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d790fdd630ee51c549bc087bec3b2e24cc27f9b7ba663adc3955b084232e932c?placeholderIfAbsent=true&apiKey=1ff31721a6fe49f39cde799654909093" alt="Sponsor 1" class="sponsor-logo">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a2d8814a02805090712cc0893a74dd7c7273f1772794cddc9a149356c7c0efa6?placeholderIfAbsent=true&apiKey=1ff31721a6fe49f39cde799654909093" alt="Sponsor 2" class="sponsor-logo">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/26dc66940b908b6759acdf4aed0fa2e2862b73a609c2c34c248fe3eed344e1f0?placeholderIfAbsent=true&apiKey=1ff31721a6fe49f39cde799654909093" alt="Sponsor 3" class="sponsor-logo">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/dd010e4f7d4889f64c42476b99cac6ce2b9f6c95f952538064bfb88d11cfca49?placeholderIfAbsent=true&apiKey=1ff31721a6fe49f39cde799654909093" alt="Sponsor 4" class="sponsor-logo">
+                        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4c52d1571f72019e9e5b6c5e526c4bde4da929083d18cc0e8509fee22011fefb?placeholderIfAbsent=true&apiKey=1ff31721a6fe49f39cde799654909093" alt="Sponsor 5" class="sponsor-logo">
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
