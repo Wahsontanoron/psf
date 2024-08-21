@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+.festival-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid #000;
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 2px solid #000;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.icon {
+  width: 50px;
+  height: auto;
+}
+
+.navigation {
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  border-bottom: 1px solid #000;
+}
+
+.navigation a {
+  color: #0e000f;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.main-content {
+  background-color: #7b254f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  border: 2px solid #000;
+}
+
+.content-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.festival-description {
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 0 #000;
+}
+
+.sponsors-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.sponsors-title {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  border: 5px solid #000;
+  padding: 0.5rem 1rem;
+}
+
+.sponsors-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sponsor-logo {
+  max-width: 150px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation a {
+    margin-bottom: 0.5rem;
+  }
+
+  .festival-description {
+    font-size: 1.5rem;
+  }
+
+  .sponsors-title {
+    font-size: 2rem;
+  }
+}
